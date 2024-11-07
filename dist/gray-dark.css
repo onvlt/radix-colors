@@ -1,21 +1,23 @@
-.dark, .dark-theme {
-  --gray-1: oklch(17.8% 0 NaN);
-  --gray-2: oklch(21.3% 0 NaN);
-  --gray-3: oklch(25.2% 0 NaN);
-  --gray-4: oklch(28.5% 0 NaN);
-  --gray-5: oklch(31.3% 0 NaN);
-  --gray-6: oklch(34.8% 0 NaN);
-  --gray-7: oklch(40.2% 0 NaN);
-  --gray-8: oklch(48.9% 0 NaN);
-  --gray-9: oklch(53.8% 0 NaN);
-  --gray-10: oklch(58.3% 0 NaN);
-  --gray-11: oklch(77% 0 NaN);
-  --gray-12: oklch(94.9% 0 NaN);
+.dark,
+.dark-theme {
+  --gray-1: oklch(17.8% 0 0);
+  --gray-2: oklch(21.3% 0 0);
+  --gray-3: oklch(25.2% 0 0);
+  --gray-4: oklch(28.5% 0 0);
+  --gray-5: oklch(31.3% 0 0);
+  --gray-6: oklch(34.8% 0 0);
+  --gray-7: oklch(40.2% 0 0);
+  --gray-8: oklch(48.9% 0 0);
+  --gray-9: oklch(53.8% 0 0);
+  --gray-10: oklch(58.3% 0 0);
+  --gray-11: oklch(77% 0 0);
+  --gray-12: oklch(94.9% 0 0);
 }
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    .dark, .dark-theme {
+    .dark,
+    .dark-theme {
       --gray-1: color(display-p3 0.067 0.067 0.067);
       --gray-2: color(display-p3 0.098 0.098 0.098);
       --gray-3: color(display-p3 0.135 0.135 0.135);

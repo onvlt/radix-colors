@@ -1,16 +1,16 @@
 :root {
-  --black-a1: oklch(0% 0 NaN / 0.05);
-  --black-a2: oklch(0% 0 NaN / 0.1);
-  --black-a3: oklch(0% 0 NaN / 0.15);
-  --black-a4: oklch(0% 0 NaN / 0.2);
-  --black-a5: oklch(0% 0 NaN / 0.3);
-  --black-a6: oklch(0% 0 NaN / 0.4);
-  --black-a7: oklch(0% 0 NaN / 0.5);
-  --black-a8: oklch(0% 0 NaN / 0.6);
-  --black-a9: oklch(0% 0 NaN / 0.7);
-  --black-a10: oklch(0% 0 NaN / 0.8);
-  --black-a11: oklch(0% 0 NaN / 0.9);
-  --black-a12: oklch(0% 0 NaN / 0.95);
+  --black-a1: oklch(0% 0 0 / 0.05);
+  --black-a2: oklch(0% 0 0 / 0.1);
+  --black-a3: oklch(0% 0 0 / 0.15);
+  --black-a4: oklch(0% 0 0 / 0.2);
+  --black-a5: oklch(0% 0 0 / 0.3);
+  --black-a6: oklch(0% 0 0 / 0.4);
+  --black-a7: oklch(0% 0 0 / 0.5);
+  --black-a8: oklch(0% 0 0 / 0.6);
+  --black-a9: oklch(0% 0 0 / 0.7);
+  --black-a10: oklch(0% 0 0 / 0.8);
+  --black-a11: oklch(0% 0 0 / 0.9);
+  --black-a12: oklch(0% 0 0 / 0.95);
 }
 
 @supports (color: color(display-p3 1 1 1)) {

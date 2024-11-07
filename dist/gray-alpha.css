@@ -1,21 +1,25 @@
-:root, .light, .light-theme {
-  --gray-a1: oklch(0% 0 NaN / 0.0118);
-  --gray-a2: oklch(0% 0 NaN / 0.0235);
-  --gray-a3: oklch(0% 0 NaN / 0.0588);
-  --gray-a4: oklch(0% 0 NaN / 0.0902);
-  --gray-a5: oklch(0% 0 NaN / 0.1216);
-  --gray-a6: oklch(0% 0 NaN / 0.149);
-  --gray-a7: oklch(0% 0 NaN / 0.1922);
-  --gray-a8: oklch(0% 0 NaN / 0.2667);
-  --gray-a9: oklch(0% 0 NaN / 0.4471);
-  --gray-a10: oklch(0% 0 NaN / 0.4863);
-  --gray-a11: oklch(0% 0 NaN / 0.6078);
-  --gray-a12: oklch(0% 0 NaN / 0.8745);
+:root,
+.light,
+.light-theme {
+  --gray-a1: oklch(0% 0 0 / 0.0118);
+  --gray-a2: oklch(0% 0 0 / 0.0235);
+  --gray-a3: oklch(0% 0 0 / 0.0588);
+  --gray-a4: oklch(0% 0 0 / 0.0902);
+  --gray-a5: oklch(0% 0 0 / 0.1216);
+  --gray-a6: oklch(0% 0 0 / 0.149);
+  --gray-a7: oklch(0% 0 0 / 0.1922);
+  --gray-a8: oklch(0% 0 0 / 0.2667);
+  --gray-a9: oklch(0% 0 0 / 0.4471);
+  --gray-a10: oklch(0% 0 0 / 0.4863);
+  --gray-a11: oklch(0% 0 0 / 0.6078);
+  --gray-a12: oklch(0% 0 0 / 0.8745);
 }
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    :root, .light, .light-theme {
+    :root,
+    .light,
+    .light-theme {
       --gray-a1: color(display-p3 0 0 0 / 0.012);
       --gray-a2: color(display-p3 0 0 0 / 0.024);
       --gray-a3: color(display-p3 0 0 0 / 0.063);

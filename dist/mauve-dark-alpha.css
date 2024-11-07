@@ -1,5 +1,6 @@
-.dark, .dark-theme {
-  --mauve-a1: oklch(0% 0 NaN / 0);
+.dark,
+.dark-theme {
+  --mauve-a1: oklch(0% 0 0 / 0);
   --mauve-a2: oklch(96.8% 0.003 308.4 / 0.0353);
   --mauve-a3: oklch(94.2% 0.019 289.3 / 0.0784);
   --mauve-a4: oklch(93.5% 0.027 307.1 / 0.1137);
@@ -15,7 +16,8 @@
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    .dark, .dark-theme {
+    .dark,
+    .dark-theme {
       --mauve-a1: color(display-p3 0 0 0 / 0);
       --mauve-a2: color(display-p3 0.996 0.992 1 / 0.034);
       --mauve-a3: color(display-p3 0.937 0.933 0.992 / 0.077);

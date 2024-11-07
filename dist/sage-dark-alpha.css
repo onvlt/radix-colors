@@ -1,5 +1,6 @@
-.dark, .dark-theme {
-  --sage-a1: oklch(0% 0 NaN / 0);
+.dark,
+.dark-theme {
+  --sage-a1: oklch(0% 0 0 / 0);
   --sage-a2: oklch(95.9% 0.003 165.1 / 0.0314);
   --sage-a3: oklch(96.8% 0.002 165.1 / 0.0706);
   --sage-a4: oklch(98.8% 0.013 191 / 0.102);
@@ -15,7 +16,8 @@
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    .dark, .dark-theme {
+    .dark,
+    .dark-theme {
       --sage-a1: color(display-p3 0 0 0 / 0);
       --sage-a2: color(display-p3 0.976 0.988 0.984 / 0.03);
       --sage-a3: color(display-p3 0.992 0.945 0.941 / 0.072);

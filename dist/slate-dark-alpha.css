@@ -1,5 +1,6 @@
-.dark, .dark-theme {
-  --slate-a1: oklch(0% 0 NaN / 0);
+.dark,
+.dark-theme {
+  --slate-a1: oklch(0% 0 0 / 0);
   --slate-a2: oklch(94.8% 0.029 201.9 / 0.0353);
   --slate-a3: oklch(93.1% 0.024 250.1 / 0.0784);
   --slate-a4: oklch(93% 0.031 225.1 / 0.1137);
@@ -15,7 +16,8 @@
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    .dark, .dark-theme {
+    .dark,
+    .dark-theme {
       --slate-a1: color(display-p3 0 0 0 / 0);
       --slate-a2: color(display-p3 0.875 0.992 1 / 0.034);
       --slate-a3: color(display-p3 0.882 0.933 0.992 / 0.077);
