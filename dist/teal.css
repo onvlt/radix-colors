@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --teal-1: oklch(99.4% 0.004 179.7);
+  --teal-2: oklch(98.2% 0.009 179.6);
+  --teal-3: oklch(96% 0.026 181.9);
+  --teal-4: oklch(93.4% 0.042 179.8);
+  --teal-5: oklch(90% 0.053 181.5);
+  --teal-6: oklch(85.6% 0.064 181.2);
+  --teal-7: oklch(79.6% 0.076 183);
+  --teal-8: oklch(72.1% 0.097 183.3);
+  --teal-9: oklch(64.9% 0.114 182);
+  --teal-10: oklch(61.9% 0.109 181.3);
+  --teal-11: oklch(55.2% 0.101 178.8);
+  --teal-12: oklch(32.7% 0.051 185);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --teal-1: color(display-p3 0.983 0.996 0.992);
+      --teal-2: color(display-p3 0.958 0.983 0.976);
+      --teal-3: color(display-p3 0.895 0.971 0.952);
+      --teal-4: color(display-p3 0.831 0.949 0.92);
+      --teal-5: color(display-p3 0.761 0.914 0.878);
+      --teal-6: color(display-p3 0.682 0.864 0.825);
+      --teal-7: color(display-p3 0.581 0.798 0.756);
+      --teal-8: color(display-p3 0.433 0.716 0.671);
+      --teal-9: color(display-p3 0.297 0.637 0.581);
+      --teal-10: color(display-p3 0.275 0.599 0.542);
+      --teal-11: color(display-p3 0.08 0.5 0.43);
+      --teal-12: color(display-p3 0.11 0.235 0.219);
+    }
+  }
+}

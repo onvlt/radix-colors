@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --green-a1: oklch(70.3% 0.214 146.2 / 0.0157);
+  --green-a2: oklch(62.2% 0.193 145.4 / 0.0431);
+  --green-a3: oklch(62.5% 0.192 145.9 / 0.098);
+  --green-a4: oklch(63.7% 0.193 146.3 / 0.1608);
+  --green-a5: oklch(60.4% 0.178 147.2 / 0.2314);
+  --green-a6: oklch(58.7% 0.169 148.3 / 0.3216);
+  --green-a7: oklch(57.4% 0.159 149.7 / 0.4431);
+  --green-a8: oklch(57.8% 0.151 152.5 / 0.6431);
+  --green-a9: oklch(57% 0.148 152.7 / 0.8118);
+  --green-a10: oklch(54.4% 0.139 153.4 / 0.8314);
+  --green-a11: oklch(48.2% 0.119 155.1 / 0.8706);
+  --green-a12: oklch(23.7% 0.053 160.8 / 0.902);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --green-a1: color(display-p3 0.024 0.757 0.267 / 0.016);
+      --green-a2: color(display-p3 0.024 0.565 0.129 / 0.036);
+      --green-a3: color(display-p3 0.012 0.596 0.145 / 0.087);
+      --green-a4: color(display-p3 0.008 0.588 0.145 / 0.142);
+      --green-a5: color(display-p3 0.004 0.541 0.157 / 0.204);
+      --green-a6: color(display-p3 0.004 0.518 0.157 / 0.283);
+      --green-a7: color(display-p3 0.004 0.486 0.165 / 0.389);
+      --green-a8: color(display-p3 0 0.478 0.2 / 0.55);
+      --green-a9: color(display-p3 0 0.455 0.165 / 0.667);
+      --green-a10: color(display-p3 0 0.416 0.153 / 0.691);
+      --green-a11: color(display-p3 0.19 0.5 0.32);
+      --green-a12: color(display-p3 0.132 0.228 0.18);
+    }
+  }
+}

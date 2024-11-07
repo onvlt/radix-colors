@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --pink-a1: oklch(65.2% 0.275 342.4 / 0.0353);
+  --pink-a2: oklch(65.6% 0.268 342.9 / 0.0706);
+  --pink-a3: oklch(69.1% 0.267 340.7 / 0.1608);
+  --pink-a4: oklch(67.2% 0.278 342.1 / 0.2471);
+  --pink-a5: oklch(68.4% 0.263 343.3 / 0.3059);
+  --pink-a6: oklch(70.7% 0.237 342.9 / 0.3725);
+  --pink-a7: oklch(72.5% 0.216 343.5 / 0.4824);
+  --pink-a8: oklch(73.4% 0.209 344.4 / 0.6353);
+  --pink-a9: oklch(69.7% 0.241 346.2 / 0.8314);
+  --pink-a10: oklch(71.8% 0.221 346.3 / 0.8627);
+  --pink-a11: oklch(78.5% 0.155 347);
+  --pink-a12: oklch(91.2% 0.059 343.2 / 0.9922);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --pink-a1: color(display-p3 0.984 0.071 0.855 / 0.03);
+      --pink-a2: color(display-p3 1 0.2 0.8 / 0.059);
+      --pink-a3: color(display-p3 1 0.294 0.886 / 0.139);
+      --pink-a4: color(display-p3 1 0.192 0.82 / 0.219);
+      --pink-a5: color(display-p3 1 0.282 0.827 / 0.274);
+      --pink-a6: color(display-p3 1 0.396 0.835 / 0.337);
+      --pink-a7: color(display-p3 1 0.459 0.831 / 0.442);
+      --pink-a8: color(display-p3 1 0.478 0.827 / 0.585);
+      --pink-a9: color(display-p3 1 0.373 0.784 / 0.761);
+      --pink-a10: color(display-p3 1 0.435 0.792 / 0.795);
+      --pink-a11: color(display-p3 1 0.535 0.78);
+      --pink-a12: color(display-p3 0.964 0.826 0.912);
+    }
+  }
+}

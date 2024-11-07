@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --sage-a1: oklch(0% 0 NaN / 0);
+  --sage-a2: oklch(95.9% 0.003 165.1 / 0.0314);
+  --sage-a3: oklch(96.8% 0.002 165.1 / 0.0706);
+  --sage-a4: oklch(98.8% 0.013 191 / 0.102);
+  --sage-a5: oklch(98% 0.011 189.8 / 0.1333);
+  --sage-a6: oklch(97.6% 0.017 164.7 / 0.1765);
+  --sage-a7: oklch(97.9% 0.017 174.1 / 0.2353);
+  --sage-a8: oklch(97.9% 0.021 170.6 / 0.3412);
+  --sage-a9: oklch(96.9% 0.034 171.5 / 0.4);
+  --sage-a10: oklch(97.5% 0.027 176.4 / 0.4549);
+  --sage-a11: oklch(98.9% 0.011 176.3 / 0.6902);
+  --sage-a12: oklch(99.8% 0.002 165.1 / 0.9294);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --sage-a1: color(display-p3 0 0 0 / 0);
+      --sage-a2: color(display-p3 0.976 0.988 0.984 / 0.03);
+      --sage-a3: color(display-p3 0.992 0.945 0.941 / 0.072);
+      --sage-a4: color(display-p3 0.988 0.996 0.992 / 0.102);
+      --sage-a5: color(display-p3 0.992 1 0.996 / 0.131);
+      --sage-a6: color(display-p3 0.973 1 0.976 / 0.173);
+      --sage-a7: color(display-p3 0.957 1 0.976 / 0.233);
+      --sage-a8: color(display-p3 0.957 1 0.984 / 0.334);
+      --sage-a9: color(display-p3 0.902 1 0.957 / 0.397);
+      --sage-a10: color(display-p3 0.929 1 0.973 / 0.452);
+      --sage-a11: color(display-p3 0.969 1 0.988 / 0.688);
+      --sage-a12: color(display-p3 0.992 1 0.996 / 0.929);
+    }
+  }
+}

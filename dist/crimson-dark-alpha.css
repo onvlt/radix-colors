@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --crimson-a1: oklch(62.3% 0.244 9.2 / 0.0353);
+  --crimson-a2: oklch(63.7% 0.23 4.4 / 0.0667);
+  --crimson-a3: oklch(65.9% 0.247 0.3 / 0.1647);
+  --crimson-a4: oklch(64.8% 0.256 0.4 / 0.2549);
+  --crimson-a5: oklch(65.7% 0.25 358.6 / 0.3176);
+  --crimson-a6: oklch(68.1% 0.228 358.4 / 0.3882);
+  --crimson-a7: oklch(69.5% 0.211 358.6 / 0.498);
+  --crimson-a8: oklch(70.3% 0.205 359.6 / 0.6706);
+  --crimson-a9: oklch(67.5% 0.229 1.5 / 0.9098);
+  --crimson-a10: oklch(69.7% 0.209 2.1 / 0.9294);
+  --crimson-a11: oklch(78.2% 0.134 4.7);
+  --crimson-a12: oklch(91.5% 0.054 346.6 / 0.9922);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --crimson-a1: color(display-p3 0.984 0.071 0.463 / 0.03);
+      --crimson-a2: color(display-p3 0.996 0.282 0.569 / 0.055);
+      --crimson-a3: color(display-p3 0.996 0.227 0.573 / 0.148);
+      --crimson-a4: color(display-p3 1 0.157 0.569 / 0.227);
+      --crimson-a5: color(display-p3 1 0.231 0.604 / 0.286);
+      --crimson-a6: color(display-p3 1 0.337 0.643 / 0.349);
+      --crimson-a7: color(display-p3 1 0.416 0.663 / 0.454);
+      --crimson-a8: color(display-p3 0.996 0.427 0.651 / 0.614);
+      --crimson-a9: color(display-p3 1 0.345 0.596 / 0.832);
+      --crimson-a10: color(display-p3 1 0.42 0.62 / 0.853);
+      --crimson-a11: color(display-p3 1 0.56 0.66);
+      --crimson-a12: color(display-p3 0.966 0.834 0.906);
+    }
+  }
+}

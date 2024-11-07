@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --violet-1: oklch(99.2% 0.003 308.4);
+  --violet-2: oklch(98.3% 0.009 299.2);
+  --violet-3: oklch(96.2% 0.019 299.1);
+  --violet-4: oklch(93.2% 0.037 297.5);
+  --violet-5: oklch(90.4% 0.052 295);
+  --violet-6: oklch(86.4% 0.072 293.7);
+  --violet-7: oklch(80.6% 0.09 293.6);
+  --violet-8: oklch(73% 0.119 292.6);
+  --violet-9: oklch(54.2% 0.179 288);
+  --violet-10: oklch(51.1% 0.177 287.7);
+  --violet-11: oklch(50.8% 0.159 288.6);
+  --violet-12: oklch(31.3% 0.097 286.6);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --violet-1: color(display-p3 0.991 0.988 0.995);
+      --violet-2: color(display-p3 0.978 0.974 0.998);
+      --violet-3: color(display-p3 0.953 0.943 0.993);
+      --violet-4: color(display-p3 0.916 0.897 1);
+      --violet-5: color(display-p3 0.876 0.851 1);
+      --violet-6: color(display-p3 0.825 0.793 0.981);
+      --violet-7: color(display-p3 0.752 0.712 0.943);
+      --violet-8: color(display-p3 0.654 0.602 0.902);
+      --violet-9: color(display-p3 0.417 0.341 0.784);
+      --violet-10: color(display-p3 0.381 0.306 0.741);
+      --violet-11: color(display-p3 0.383 0.317 0.702);
+      --violet-12: color(display-p3 0.179 0.15 0.359);
+    }
+  }
+}

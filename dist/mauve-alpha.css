@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --mauve-a1: oklch(31.5% 0.145 328.4 / 0.0118);
+  --mauve-a2: oklch(24.5% 0.132 298.1 / 0.0235);
+  --mauve-a3: oklch(23.1% 0.114 315.3 / 0.0627);
+  --mauve-a4: oklch(19.3% 0.099 306.4 / 0.0941);
+  --mauve-a5: oklch(19.5% 0.101 304.9 / 0.1255);
+  --mauve-a6: oklch(17.3% 0.096 292.1 / 0.1529);
+  --mauve-a7: oklch(16.4% 0.094 288.1 / 0.1961);
+  --mauve-a8: oklch(15.2% 0.093 278.2 / 0.2706);
+  --mauve-a9: oklch(11.6% 0.068 284.2 / 0.451);
+  --mauve-a10: oklch(10.9% 0.063 288 / 0.4902);
+  --mauve-a11: oklch(9.4% 0.052 294 / 0.6118);
+  --mauve-a12: oklch(7.3% 0.039 296.8 / 0.8784);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --mauve-a1: color(display-p3 0.349 0.024 0.349 / 0.012);
+      --mauve-a2: color(display-p3 0.184 0.024 0.349 / 0.024);
+      --mauve-a3: color(display-p3 0.129 0.008 0.255 / 0.063);
+      --mauve-a4: color(display-p3 0.094 0.012 0.216 / 0.095);
+      --mauve-a5: color(display-p3 0.098 0.008 0.224 / 0.126);
+      --mauve-a6: color(display-p3 0.055 0.004 0.18 / 0.153);
+      --mauve-a7: color(display-p3 0.067 0.008 0.184 / 0.197);
+      --mauve-a8: color(display-p3 0.02 0.004 0.176 / 0.271);
+      --mauve-a9: color(display-p3 0.02 0.004 0.106 / 0.451);
+      --mauve-a10: color(display-p3 0.012 0.004 0.09 / 0.491);
+      --mauve-a11: color(display-p3 0.016 0 0.059 / 0.612);
+      --mauve-a12: color(display-p3 0.008 0 0.027 / 0.879);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --blue-a1: oklch(61.5% 0.211 256.1 / 0.0157);
+  --blue-a2: oklch(64.1% 0.197 253 / 0.0431);
+  --blue-a3: oklch(64.1% 0.182 250.2 / 0.098);
+  --blue-a4: oklch(68% 0.179 247 / 0.1647);
+  --blue-a5: oklch(65.6% 0.19 250.8 / 0.2392);
+  --blue-a6: oklch(62.6% 0.191 252.6 / 0.3255);
+  --blue-a7: oklch(60.8% 0.183 252.2 / 0.4431);
+  --blue-a8: oklch(60.7% 0.176 250.8 / 0.6314);
+  --blue-a9: oklch(64.9% 0.193 251.8);
+  --blue-a10: oklch(61.8% 0.186 252.2 / 0.9804);
+  --blue-a11: oklch(53.7% 0.168 253.4 / 0.949);
+  --blue-a12: oklch(27.2% 0.105 259 / 0.9333);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --blue-a1: color(display-p3 0.024 0.514 1 / 0.016);
+      --blue-a2: color(display-p3 0.024 0.514 0.906 / 0.04);
+      --blue-a3: color(display-p3 0.012 0.506 0.914 / 0.087);
+      --blue-a4: color(display-p3 0.008 0.545 1 / 0.146);
+      --blue-a5: color(display-p3 0.004 0.502 0.984 / 0.212);
+      --blue-a6: color(display-p3 0.004 0.463 0.922 / 0.291);
+      --blue-a7: color(display-p3 0.004 0.431 0.863 / 0.393);
+      --blue-a8: color(display-p3 0 0.427 0.851 / 0.55);
+      --blue-a9: color(display-p3 0 0.412 0.961 / 0.753);
+      --blue-a10: color(display-p3 0 0.376 0.886 / 0.765);
+      --blue-a11: color(display-p3 0.15 0.44 0.84);
+      --blue-a12: color(display-p3 0.102 0.193 0.379);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --olive-a1: oklch(38.9% 0.133 142.5 / 0.0118);
+  --olive-a2: oklch(35.1% 0.12 142.5 / 0.0275);
+  --olive-a3: oklch(21.1% 0.072 142.5 / 0.0627);
+  --olive-a4: oklch(17.3% 0.059 142.5 / 0.0941);
+  --olive-a5: oklch(18.1% 0.062 142.5 / 0.1255);
+  --olive-a6: oklch(16.6% 0.056 142.5 / 0.1569);
+  --olive-a7: oklch(14.6% 0.05 142.5 / 0.2);
+  --olive-a8: oklch(15.1% 0.044 134.7 / 0.2784);
+  --olive-a9: oklch(15.2% 0.043 132.6 / 0.4706);
+  --olive-a10: oklch(14.7% 0.042 134 / 0.5098);
+  --olive-a11: oklch(12.9% 0.039 136.4 / 0.6275);
+  --olive-a12: oklch(10.8% 0.033 137.4 / 0.8902);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --olive-a1: color(display-p3 0.024 0.349 0.024 / 0.012);
+      --olive-a2: color(display-p3 0.024 0.302 0.024 / 0.028);
+      --olive-a3: color(display-p3 0.008 0.129 0.008 / 0.063);
+      --olive-a4: color(display-p3 0.012 0.094 0.012 / 0.095);
+      --olive-a5: color(display-p3 0.035 0.098 0.008 / 0.126);
+      --olive-a6: color(display-p3 0.027 0.078 0.004 / 0.157);
+      --olive-a7: color(display-p3 0.02 0.059 0 / 0.2);
+      --olive-a8: color(display-p3 0.02 0.059 0.004 / 0.279);
+      --olive-a9: color(display-p3 0.02 0.051 0.004 / 0.467);
+      --olive-a10: color(display-p3 0.024 0.047 0 / 0.51);
+      --olive-a11: color(display-p3 0.012 0.039 0 / 0.628);
+      --olive-a12: color(display-p3 0.008 0.024 0 / 0.891);
+    }
+  }
+}

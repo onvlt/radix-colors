@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --plum-1: oklch(99.3% 0.004 314.8);
+  --plum-2: oklch(98.2% 0.01 325.7);
+  --plum-3: oklch(95.7% 0.027 325.8);
+  --plum-4: oklch(92.9% 0.044 324.8);
+  --plum-5: oklch(89.9% 0.058 325.1);
+  --plum-6: oklch(86.1% 0.071 323.9);
+  --plum-7: oklch(80.9% 0.092 323.3);
+  --plum-8: oklch(74.1% 0.12 322.2);
+  --plum-9: oklch(57.9% 0.188 322.1);
+  --plum-10: oklch(55.2% 0.181 322.2);
+  --plum-11: oklch(52.2% 0.173 321.9);
+  --plum-12: oklch(33.8% 0.125 321.4);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --plum-1: color(display-p3 0.995 0.988 0.999);
+      --plum-2: color(display-p3 0.988 0.971 0.99);
+      --plum-3: color(display-p3 0.973 0.923 0.98);
+      --plum-4: color(display-p3 0.953 0.875 0.966);
+      --plum-5: color(display-p3 0.926 0.825 0.945);
+      --plum-6: color(display-p3 0.89 0.765 0.916);
+      --plum-7: color(display-p3 0.84 0.686 0.877);
+      --plum-8: color(display-p3 0.775 0.58 0.832);
+      --plum-9: color(display-p3 0.624 0.313 0.708);
+      --plum-10: color(display-p3 0.587 0.29 0.667);
+      --plum-11: color(display-p3 0.543 0.263 0.619);
+      --plum-12: color(display-p3 0.299 0.114 0.352);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --ruby-a1: oklch(63.5% 0.254 15.5 / 0.0118);
+  --ruby-a2: oklch(62.9% 0.256 26.7 / 0.0314);
+  --ruby-a3: oklch(60.7% 0.246 25.6 / 0.0824);
+  --ruby-a4: oklch(62.9% 0.256 26 / 0.1373);
+  --ruby-a5: oklch(63% 0.255 25.2 / 0.1922);
+  --ruby-a6: oklch(57.9% 0.235 25.3 / 0.251);
+  --ruby-a7: oklch(53.7% 0.217 24.1 / 0.3255);
+  --ruby-a8: oklch(51.6% 0.208 22.7 / 0.4275);
+  --ruby-a9: oklch(56.2% 0.227 23.2 / 0.7255);
+  --ruby-a10: oklch(54.5% 0.22 22.7 / 0.7686);
+  --ruby-a11: oklch(51.3% 0.206 20.2 / 0.8588);
+  --ruby-a12: oklch(28.6% 0.114 15.8 / 0.9098);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --ruby-a1: color(display-p3 0.675 0.024 0.349 / 0.012);
+      --ruby-a2: color(display-p3 0.863 0.024 0.024 / 0.028);
+      --ruby-a3: color(display-p3 0.804 0.008 0.11 / 0.079);
+      --ruby-a4: color(display-p3 0.91 0.008 0.125 / 0.13);
+      --ruby-a5: color(display-p3 0.831 0.004 0.133 / 0.185);
+      --ruby-a6: color(display-p3 0.745 0.004 0.118 / 0.244);
+      --ruby-a7: color(display-p3 0.678 0.004 0.114 / 0.314);
+      --ruby-a8: color(display-p3 0.639 0.004 0.125 / 0.412);
+      --ruby-a9: color(display-p3 0.753 0 0.129 / 0.679);
+      --ruby-a10: color(display-p3 0.714 0 0.125 / 0.714);
+      --ruby-a11: color(display-p3 0.728 0.211 0.311);
+      --ruby-a12: color(display-p3 0.36 0.115 0.171);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --slate-a1: oklch(0% 0 NaN / 0);
+  --slate-a2: oklch(94.8% 0.029 201.9 / 0.0353);
+  --slate-a3: oklch(93.1% 0.024 250.1 / 0.0784);
+  --slate-a4: oklch(93% 0.031 225.1 / 0.1137);
+  --slate-a5: oklch(93.6% 0.031 243.7 / 0.1451);
+  --slate-a6: oklch(93% 0.033 244 / 0.1882);
+  --slate-a7: oklch(93.7% 0.032 245.3 / 0.251);
+  --slate-a8: oklch(93.7% 0.032 245.3 / 0.3647);
+  --slate-a9: oklch(93.6% 0.028 258.4 / 0.4275);
+  --slate-a10: oklch(94.5% 0.023 264.5 / 0.4824);
+  --slate-a11: oklch(97.4% 0.011 252.1 / 0.7098);
+  --slate-a12: oklch(99.4% 0.003 264.5 / 0.9373);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --slate-a1: color(display-p3 0 0 0 / 0);
+      --slate-a2: color(display-p3 0.875 0.992 1 / 0.034);
+      --slate-a3: color(display-p3 0.882 0.933 0.992 / 0.077);
+      --slate-a4: color(display-p3 0.882 0.953 0.996 / 0.111);
+      --slate-a5: color(display-p3 0.878 0.929 0.996 / 0.145);
+      --slate-a6: color(display-p3 0.882 0.949 0.996 / 0.183);
+      --slate-a7: color(display-p3 0.882 0.929 1 / 0.246);
+      --slate-a8: color(display-p3 0.871 0.937 1 / 0.361);
+      --slate-a9: color(display-p3 0.898 0.937 1 / 0.42);
+      --slate-a10: color(display-p3 0.918 0.945 1 / 0.475);
+      --slate-a11: color(display-p3 0.949 0.969 0.996 / 0.708);
+      --slate-a12: color(display-p3 0.988 0.992 1 / 0.937);
+    }
+  }
+}

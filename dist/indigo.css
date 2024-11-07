@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --indigo-1: oklch(99.4% 0.001 286.4);
+  --indigo-2: oklch(98.2% 0.008 271.3);
+  --indigo-3: oklch(96.1% 0.017 267.8);
+  --indigo-4: oklch(93.5% 0.031 269.8);
+  --indigo-5: oklch(90.2% 0.047 269.6);
+  --indigo-6: oklch(86.2% 0.068 271.1);
+  --indigo-7: oklch(80.6% 0.088 271.4);
+  --indigo-8: oklch(73.1% 0.112 270.4);
+  --indigo-9: oklch(54.4% 0.191 267);
+  --indigo-10: oklch(51.1% 0.195 266.6);
+  --indigo-11: oklch(50.9% 0.172 267.2);
+  --indigo-12: oklch(31.3% 0.086 268.6);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --indigo-1: color(display-p3 0.992 0.992 0.996);
+      --indigo-2: color(display-p3 0.971 0.977 0.998);
+      --indigo-3: color(display-p3 0.933 0.948 0.992);
+      --indigo-4: color(display-p3 0.885 0.914 1);
+      --indigo-5: color(display-p3 0.831 0.87 1);
+      --indigo-6: color(display-p3 0.767 0.814 0.995);
+      --indigo-7: color(display-p3 0.685 0.74 0.957);
+      --indigo-8: color(display-p3 0.569 0.639 0.916);
+      --indigo-9: color(display-p3 0.276 0.384 0.837);
+      --indigo-10: color(display-p3 0.234 0.343 0.801);
+      --indigo-11: color(display-p3 0.256 0.354 0.755);
+      --indigo-12: color(display-p3 0.133 0.175 0.348);
+    }
+  }
+}

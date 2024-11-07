@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --tomato-1: oklch(18.7% 0.012 18.3);
+  --tomato-2: oklch(20.8% 0.017 31.4);
+  --tomato-3: oklch(25.5% 0.055 26.8);
+  --tomato-4: oklch(29% 0.087 27.8);
+  --tomato-5: oklch(33.1% 0.098 28.6);
+  --tomato-6: oklch(38% 0.1 29.9);
+  --tomato-7: oklch(44.6% 0.106 31.6);
+  --tomato-8: oklch(53.8% 0.129 33.4);
+  --tomato-9: oklch(62.7% 0.194 33.3);
+  --tomato-10: oklch(66.4% 0.179 34.1);
+  --tomato-11: oklch(77.9% 0.131 34.9);
+  --tomato-12: oklch(89.9% 0.046 31.2);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --tomato-1: color(display-p3 0.09 0.068 0.067);
+      --tomato-2: color(display-p3 0.115 0.084 0.076);
+      --tomato-3: color(display-p3 0.205 0.097 0.083);
+      --tomato-4: color(display-p3 0.282 0.099 0.077);
+      --tomato-5: color(display-p3 0.339 0.129 0.101);
+      --tomato-6: color(display-p3 0.398 0.179 0.141);
+      --tomato-7: color(display-p3 0.487 0.245 0.194);
+      --tomato-8: color(display-p3 0.629 0.322 0.248);
+      --tomato-9: color(display-p3 0.831 0.345 0.231);
+      --tomato-10: color(display-p3 0.862 0.415 0.298);
+      --tomato-11: color(display-p3 1 0.585 0.455);
+      --tomato-12: color(display-p3 0.959 0.833 0.802);
+    }
+  }
+}

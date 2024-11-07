@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --grass-1: oklch(99.4% 0.005 145.5);
+  --grass-2: oklch(98.2% 0.01 145.5);
+  --grass-3: oklch(96% 0.022 145.4);
+  --grass-4: oklch(93.5% 0.038 146.5);
+  --grass-5: oklch(90% 0.052 146);
+  --grass-6: oklch(85.6% 0.071 146.8);
+  --grass-7: oklch(79.8% 0.094 147.3);
+  --grass-8: oklch(71.7% 0.131 148.1);
+  --grass-9: oklch(65.1% 0.147 147.4);
+  --grass-10: oklch(61.5% 0.142 147.2);
+  --grass-11: oklch(52.6% 0.129 147.2);
+  --grass-12: oklch(32.7% 0.053 148.6);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --grass-1: color(display-p3 0.986 0.996 0.985);
+      --grass-2: color(display-p3 0.966 0.983 0.964);
+      --grass-3: color(display-p3 0.923 0.965 0.917);
+      --grass-4: color(display-p3 0.872 0.94 0.865);
+      --grass-5: color(display-p3 0.811 0.908 0.802);
+      --grass-6: color(display-p3 0.733 0.864 0.724);
+      --grass-7: color(display-p3 0.628 0.803 0.622);
+      --grass-8: color(display-p3 0.477 0.72 0.482);
+      --grass-9: color(display-p3 0.38 0.647 0.378);
+      --grass-10: color(display-p3 0.344 0.598 0.342);
+      --grass-11: color(display-p3 0.263 0.488 0.261);
+      --grass-12: color(display-p3 0.151 0.233 0.153);
+    }
+  }
+}

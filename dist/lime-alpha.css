@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --lime-a1: oklch(62.3% 0.166 129.4 / 0.0196);
+  --lime-a2: oklch(61.6% 0.159 127 / 0.0471);
+  --lime-a3: oklch(76.9% 0.195 125.6 / 0.1608);
+  --lime-a4: oklch(76% 0.196 127 / 0.2588);
+  --lime-a5: oklch(72.4% 0.191 128.5 / 0.349);
+  --lime-a6: oklch(67.3% 0.179 129.3 / 0.4314);
+  --lime-a7: oklch(62% 0.169 130.7 / 0.5294);
+  --lime-a8: oklch(59.5% 0.167 132.7 / 0.6706);
+  --lime-a9: oklch(83.4% 0.227 130.7 / 0.6118);
+  --lime-a10: oklch(81.3% 0.22 130.5 / 0.702);
+  --lime-a11: oklch(43.9% 0.122 132.1 / 0.8157);
+  --lime-a12: oklch(26.1% 0.065 123.7 / 0.8902);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --lime-a1: color(display-p3 0.412 0.608 0.02 / 0.02);
+      --lime-a2: color(display-p3 0.514 0.592 0.024 / 0.048);
+      --lime-a3: color(display-p3 0.584 0.765 0.008 / 0.15);
+      --lime-a4: color(display-p3 0.561 0.757 0.004 / 0.24);
+      --lime-a5: color(display-p3 0.514 0.698 0.004 / 0.322);
+      --lime-a6: color(display-p3 0.443 0.627 0 / 0.4);
+      --lime-a7: color(display-p3 0.376 0.561 0.004 / 0.491);
+      --lime-a8: color(display-p3 0.333 0.529 0 / 0.624);
+      --lime-a9: color(display-p3 0.588 0.867 0 / 0.534);
+      --lime-a10: color(display-p3 0.561 0.827 0 / 0.604);
+      --lime-a11: color(display-p3 0.386 0.482 0.227);
+      --lime-a12: color(display-p3 0.222 0.25 0.128);
+    }
+  }
+}

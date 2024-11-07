@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --orange-a1: oklch(54.9% 0.174 39.5 / 0.0157);
+  --orange-a2: oklch(75.4% 0.178 59.2 / 0.0706);
+  --orange-a3: oklch(77.7% 0.173 66.1 / 0.1608);
+  --orange-a4: oklch(75.9% 0.177 60.6 / 0.2902);
+  --orange-a5: oklch(74.9% 0.18 57.8 / 0.3961);
+  --orange-a6: oklch(73.3% 0.185 53.4 / 0.4902);
+  --orange-a7: oklch(67.7% 0.183 48.5 / 0.549);
+  --orange-a8: oklch(64.4% 0.183 45.3 / 0.6667);
+  --orange-a9: oklch(67.2% 0.202 42.2 / 0.9176);
+  --orange-a10: oklch(66.2% 0.195 43.5);
+  --orange-a11: oklch(58.5% 0.174 42.7);
+  --orange-a12: oklch(26.2% 0.081 40.7 / 0.8863);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --orange-a1: color(display-p3 0.757 0.267 0.024 / 0.016);
+      --orange-a2: color(display-p3 0.886 0.533 0.008 / 0.067);
+      --orange-a3: color(display-p3 0.922 0.584 0.008 / 0.15);
+      --orange-a4: color(display-p3 1 0.604 0.004 / 0.314);
+      --orange-a5: color(display-p3 1 0.569 0.004 / 0.416);
+      --orange-a6: color(display-p3 0.949 0.494 0.004 / 0.455);
+      --orange-a7: color(display-p3 0.839 0.408 0 / 0.514);
+      --orange-a8: color(display-p3 0.804 0.349 0 / 0.62);
+      --orange-a9: color(display-p3 0.878 0.314 0 / 0.8);
+      --orange-a10: color(display-p3 0.843 0.29 0 / 0.836);
+      --orange-a11: color(display-p3 0.76 0.34 0);
+      --orange-a12: color(display-p3 0.323 0.185 0.127);
+    }
+  }
+}

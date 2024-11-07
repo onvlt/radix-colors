@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --plum-a1: oklch(58.1% 0.299 307 / 0.0118);
+  --plum-a2: oklch(56.7% 0.261 328.4 / 0.0314);
+  --plum-a3: oklch(59.3% 0.273 328.4 / 0.0784);
+  --plum-a4: oklch(57.6% 0.267 326.5 / 0.1294);
+  --plum-a5: oklch(55.1% 0.255 326.6 / 0.1804);
+  --plum-a6: oklch(51.2% 0.24 324.6 / 0.2392);
+  --plum-a7: oklch(48.9% 0.231 323.4 / 0.3216);
+  --plum-a8: oklch(47.3% 0.226 321.2 / 0.4314);
+  --plum-a9: oklch(45.7% 0.218 320.9 / 0.7098);
+  --plum-a10: oklch(43.2% 0.206 321.1 / 0.7333);
+  --plum-a11: oklch(40.4% 0.193 320.5 / 0.7569);
+  --plum-a12: oklch(26.9% 0.129 320.8 / 0.902);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --plum-a1: color(display-p3 0.675 0.024 1 / 0.012);
+      --plum-a2: color(display-p3 0.58 0.024 0.58 / 0.028);
+      --plum-a3: color(display-p3 0.655 0.008 0.753 / 0.079);
+      --plum-a4: color(display-p3 0.627 0.008 0.722 / 0.126);
+      --plum-a5: color(display-p3 0.58 0.004 0.69 / 0.177);
+      --plum-a6: color(display-p3 0.537 0.004 0.655 / 0.236);
+      --plum-a7: color(display-p3 0.49 0.004 0.616 / 0.314);
+      --plum-a8: color(display-p3 0.471 0.004 0.6 / 0.42);
+      --plum-a9: color(display-p3 0.451 0 0.576 / 0.687);
+      --plum-a10: color(display-p3 0.42 0 0.529 / 0.71);
+      --plum-a11: color(display-p3 0.543 0.263 0.619);
+      --plum-a12: color(display-p3 0.299 0.114 0.352);
+    }
+  }
+}

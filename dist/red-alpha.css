@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --red-a1: oklch(62.8% 0.258 29.2 / 0.0118);
+  --red-a2: oklch(62.8% 0.258 29.2 / 0.0314);
+  --red-a3: oklch(60.6% 0.248 28.4 / 0.0784);
+  --red-a4: oklch(62.8% 0.257 28.8 / 0.1412);
+  --red-a5: oklch(62.8% 0.257 28.9 / 0.1961);
+  --red-a6: oklch(61.5% 0.252 29 / 0.2588);
+  --red-a7: oklch(56.8% 0.233 29 / 0.3373);
+  --red-a8: oklch(54.3% 0.222 28.8 / 0.4431);
+  --red-a9: oklch(56% 0.229 28.7 / 0.7176);
+  --red-a10: oklch(54.1% 0.222 28.8 / 0.7569);
+  --red-a11: oklch(51.5% 0.211 28.6 / 0.8275);
+  --red-a12: oklch(28.4% 0.114 21.9 / 0.9098);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --red-a1: color(display-p3 0.675 0.024 0.024 / 0.012);
+      --red-a2: color(display-p3 0.863 0.024 0.024 / 0.028);
+      --red-a3: color(display-p3 0.792 0.008 0.008 / 0.075);
+      --red-a4: color(display-p3 1 0.008 0.008 / 0.134);
+      --red-a5: color(display-p3 0.918 0.008 0.008 / 0.189);
+      --red-a6: color(display-p3 0.831 0.02 0.004 / 0.251);
+      --red-a7: color(display-p3 0.741 0.016 0.004 / 0.33);
+      --red-a8: color(display-p3 0.698 0.012 0.004 / 0.428);
+      --red-a9: color(display-p3 0.749 0.008 0 / 0.675);
+      --red-a10: color(display-p3 0.714 0.012 0 / 0.714);
+      --red-a11: color(display-p3 0.744 0.234 0.222);
+      --red-a12: color(display-p3 0.36 0.115 0.143);
+    }
+  }
+}

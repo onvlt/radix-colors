@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --mint-1: oklch(99.3% 0.005 183);
+  --mint-2: oklch(98.1% 0.01 181.4);
+  --mint-3: oklch(96% 0.031 178.9);
+  --mint-4: oklch(93.3% 0.048 178.3);
+  --mint-5: oklch(90% 0.061 178.1);
+  --mint-6: oklch(85.7% 0.072 178.2);
+  --mint-7: oklch(79.7% 0.084 178.2);
+  --mint-8: oklch(72.2% 0.106 177.8);
+  --mint-9: oklch(87% 0.1 178);
+  --mint-10: oklch(84% 0.099 178.4);
+  --mint-11: oklch(51.2% 0.096 175.6);
+  --mint-12: oklch(35% 0.051 181.3);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --mint-1: color(display-p3 0.98 0.995 0.992);
+      --mint-2: color(display-p3 0.957 0.985 0.977);
+      --mint-3: color(display-p3 0.888 0.972 0.95);
+      --mint-4: color(display-p3 0.819 0.951 0.916);
+      --mint-5: color(display-p3 0.747 0.918 0.873);
+      --mint-6: color(display-p3 0.668 0.87 0.818);
+      --mint-7: color(display-p3 0.567 0.805 0.744);
+      --mint-8: color(display-p3 0.42 0.724 0.649);
+      --mint-9: color(display-p3 0.62 0.908 0.834);
+      --mint-10: color(display-p3 0.585 0.871 0.797);
+      --mint-11: color(display-p3 0.203 0.463 0.397);
+      --mint-12: color(display-p3 0.136 0.259 0.236);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --sky-a1: oklch(80.7% 0.146 218.9 / 0.0235);
+  --sky-a2: oklch(67.4% 0.137 231.4 / 0.0549);
+  --sky-a3: oklch(71.9% 0.145 231.1 / 0.1176);
+  --sky-a4: oklch(69.8% 0.14 230.7 / 0.1804);
+  --sky-a5: oklch(66.6% 0.136 231.8 / 0.2549);
+  --sky-a6: oklch(62.3% 0.132 234.7 / 0.3373);
+  --sky-a7: oklch(59.6% 0.129 236.2 / 0.4471);
+  --sky-a8: oklch(58.5% 0.13 237.9 / 0.6235);
+  --sky-a9: oklch(77.3% 0.149 226.7 / 0.5137);
+  --sky-a10: oklch(74.3% 0.145 228.1 / 0.5451);
+  --sky-a11: oklch(52.5% 0.108 232.5);
+  --sky-a12: oklch(25.6% 0.065 245.5 / 0.8863);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --sky-a1: color(display-p3 0.02 0.804 1 / 0.02);
+      --sky-a2: color(display-p3 0.024 0.592 0.757 / 0.048);
+      --sky-a3: color(display-p3 0.004 0.655 0.886 / 0.102);
+      --sky-a4: color(display-p3 0.004 0.604 0.851 / 0.157);
+      --sky-a5: color(display-p3 0.004 0.565 0.792 / 0.224);
+      --sky-a6: color(display-p3 0.004 0.502 0.737 / 0.299);
+      --sky-a7: color(display-p3 0.004 0.459 0.694 / 0.397);
+      --sky-a8: color(display-p3 0 0.435 0.682 / 0.542);
+      --sky-a9: color(display-p3 0.004 0.71 0.965 / 0.416);
+      --sky-a10: color(display-p3 0.004 0.647 0.914 / 0.444);
+      --sky-a11: color(display-p3 0.193 0.448 0.605);
+      --sky-a12: color(display-p3 0.145 0.241 0.329);
+    }
+  }
+}

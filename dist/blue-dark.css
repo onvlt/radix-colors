@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --blue-1: oklch(19.4% 0.025 256.5);
+  --blue-2: oklch(21.3% 0.03 261.3);
+  --blue-3: oklch(27.4% 0.066 253.9);
+  --blue-4: oklch(32% 0.097 252.3);
+  --blue-5: oklch(36.7% 0.106 250.7);
+  --blue-6: oklch(41.6% 0.113 252);
+  --blue-7: oklch(47.4% 0.122 253.1);
+  --blue-8: oklch(54.1% 0.14 253.2);
+  --blue-9: oklch(64.9% 0.193 251.8);
+  --blue-10: oklch(68.8% 0.169 251.4);
+  --blue-11: oklch(76.4% 0.126 249.5);
+  --blue-12: oklch(90.7% 0.051 238.4);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --blue-1: color(display-p3 0.057 0.081 0.122);
+      --blue-2: color(display-p3 0.072 0.098 0.147);
+      --blue-3: color(display-p3 0.078 0.154 0.27);
+      --blue-4: color(display-p3 0.033 0.197 0.37);
+      --blue-5: color(display-p3 0.08 0.245 0.441);
+      --blue-6: color(display-p3 0.14 0.298 0.511);
+      --blue-7: color(display-p3 0.195 0.361 0.6);
+      --blue-8: color(display-p3 0.239 0.434 0.72);
+      --blue-9: color(display-p3 0.247 0.556 0.969);
+      --blue-10: color(display-p3 0.344 0.612 0.973);
+      --blue-11: color(display-p3 0.49 0.72 1);
+      --blue-12: color(display-p3 0.788 0.898 0.99);
+    }
+  }
+}

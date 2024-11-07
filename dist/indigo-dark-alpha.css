@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --indigo-a1: oklch(48.7% 0.289 265.1 / 0.0588);
+  --indigo-a2: oklch(53.7% 0.247 267.6 / 0.0902);
+  --indigo-a3: oklch(56.4% 0.239 265.3 / 0.2353);
+  --indigo-a4: oklch(57.3% 0.233 265.6 / 0.3412);
+  --indigo-a5: oklch(59.7% 0.215 265.8 / 0.4196);
+  --indigo-a6: oklch(61.7% 0.203 267.7 / 0.4863);
+  --indigo-a7: oklch(63.6% 0.194 268.3 / 0.5647);
+  --indigo-a8: oklch(64% 0.19 268 / 0.6745);
+  --indigo-a9: oklch(60% 0.216 266.9 / 0.8588);
+  --indigo-a10: oklch(63.5% 0.194 269.1 / 0.8902);
+  --indigo-a11: oklch(77.6% 0.114 273);
+  --indigo-a12: oklch(91.1% 0.043 269.6);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --indigo-a1: color(display-p3 0.071 0.212 0.996 / 0.055);
+      --indigo-a2: color(display-p3 0.251 0.345 0.988 / 0.085);
+      --indigo-a3: color(display-p3 0.243 0.404 1 / 0.223);
+      --indigo-a4: color(display-p3 0.263 0.42 1 / 0.324);
+      --indigo-a5: color(display-p3 0.314 0.451 1 / 0.4);
+      --indigo-a6: color(display-p3 0.361 0.49 1 / 0.467);
+      --indigo-a7: color(display-p3 0.388 0.51 1 / 0.547);
+      --indigo-a8: color(display-p3 0.404 0.518 1 / 0.652);
+      --indigo-a9: color(display-p3 0.318 0.451 1 / 0.824);
+      --indigo-a10: color(display-p3 0.404 0.506 1 / 0.858);
+      --indigo-a11: color(display-p3 0.63 0.69 1);
+      --indigo-a12: color(display-p3 0.848 0.881 0.99);
+    }
+  }
+}

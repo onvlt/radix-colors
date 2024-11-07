@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --gold-a1: oklch(63.6% 0.134 109.7 / 0.0078);
+  --gold-a2: oklch(91.6% 0.091 91.8 / 0.0431);
+  --gold-a3: oklch(94.1% 0.065 95.9 / 0.0824);
+  --gold-a4: oklch(95.2% 0.057 88.6 / 0.1176);
+  --gold-a5: oklch(94.7% 0.058 87.6 / 0.1647);
+  --gold-a6: oklch(94.7% 0.047 80.8 / 0.2157);
+  --gold-a7: oklch(95.2% 0.046 82 / 0.2824);
+  --gold-a8: oklch(94.4% 0.047 80.8 / 0.3725);
+  --gold-a9: oklch(90.9% 0.079 77.1 / 0.5647);
+  --gold-a10: oklch(91.8% 0.07 78 / 0.6157);
+  --gold-a11: oklch(93.8% 0.05 76.9 / 0.7843);
+  --gold-a12: oklch(97.9% 0.015 77.1 / 0.9059);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --gold-a1: color(display-p3 0.855 0.855 0.071 / 0.005);
+      --gold-a2: color(display-p3 0.98 0.89 0.616 / 0.043);
+      --gold-a3: color(display-p3 1 0.949 0.753 / 0.08);
+      --gold-a4: color(display-p3 1 0.933 0.8 / 0.118);
+      --gold-a5: color(display-p3 1 0.949 0.804 / 0.16);
+      --gold-a6: color(display-p3 1 0.925 0.8 / 0.215);
+      --gold-a7: color(display-p3 1 0.945 0.831 / 0.278);
+      --gold-a8: color(display-p3 1 0.937 0.82 / 0.366);
+      --gold-a9: color(display-p3 0.996 0.882 0.69 / 0.551);
+      --gold-a10: color(display-p3 1 0.894 0.725 / 0.601);
+      --gold-a11: color(display-p3 0.784 0.728 0.635);
+      --gold-a12: color(display-p3 0.906 0.887 0.855);
+    }
+  }
+}

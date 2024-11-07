@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --jade-a1: oklch(78.3% 0.242 145.6 / 0.0196);
+  --jade-a2: oklch(87.4% 0.194 159.1 / 0.0471);
+  --jade-a3: oklch(86.4% 0.206 156.8 / 0.1255);
+  --jade-a4: oklch(88.2% 0.199 160.1 / 0.1765);
+  --jade-a5: oklch(88.6% 0.189 163.5 / 0.2314);
+  --jade-a6: oklch(89.2% 0.174 166.6 / 0.2941);
+  --jade-a7: oklch(89.1% 0.164 168.4 / 0.3686);
+  --jade-a8: oklch(89.8% 0.16 170.9 / 0.4588);
+  --jade-a9: oklch(89.2% 0.166 169.8 / 0.6157);
+  --jade-a10: oklch(89% 0.17 168.9 / 0.6706);
+  --jade-a11: oklch(88.7% 0.178 166.7 / 0.8392);
+  --jade-a12: oklch(94.5% 0.081 166.6 / 0.9373);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --jade-a1: color(display-p3 0 0.992 0.298 / 0.017);
+      --jade-a2: color(display-p3 0.318 0.988 0.651 / 0.047);
+      --jade-a3: color(display-p3 0.267 1 0.667 / 0.118);
+      --jade-a4: color(display-p3 0.275 0.996 0.702 / 0.173);
+      --jade-a5: color(display-p3 0.361 1 0.741 / 0.227);
+      --jade-a6: color(display-p3 0.439 1 0.796 / 0.286);
+      --jade-a7: color(display-p3 0.49 1 0.804 / 0.362);
+      --jade-a8: color(display-p3 0.506 1 0.835 / 0.45);
+      --jade-a9: color(display-p3 0.478 0.996 0.816 / 0.606);
+      --jade-a10: color(display-p3 0.478 1 0.816 / 0.656);
+      --jade-a11: color(display-p3 0.4 0.835 0.656);
+      --jade-a12: color(display-p3 0.734 0.934 0.838);
+    }
+  }
+}

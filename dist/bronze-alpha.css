@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --bronze-a1: oklch(28.2% 0.116 29.2 / 0.0118);
+  --bronze-a2: oklch(55.6% 0.195 34.9 / 0.0392);
+  --bronze-a3: oklch(43.7% 0.15 35.9 / 0.0824);
+  --bronze-a4: oklch(40.8% 0.129 39.6 / 0.1255);
+  --bronze-a5: oklch(37.9% 0.121 39.4 / 0.1725);
+  --bronze-a6: oklch(37.9% 0.119 40.1 / 0.2275);
+  --bronze-a7: oklch(35.9% 0.115 38.9 / 0.298);
+  --bronze-a8: oklch(34.6% 0.113 38.2 / 0.4);
+  --bronze-a9: oklch(30.9% 0.094 41.3 / 0.5529);
+  --bronze-a10: oklch(28.4% 0.089 40.2 / 0.5922);
+  --bronze-a11: oklch(24.5% 0.077 40.1 / 0.6706);
+  --bronze-a12: oklch(16.2% 0.046 45.2 / 0.8314);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --bronze-a1: color(display-p3 0.349 0.024 0.024 / 0.012);
+      --bronze-a2: color(display-p3 0.71 0.22 0.024 / 0.04);
+      --bronze-a3: color(display-p3 0.482 0.2 0.008 / 0.083);
+      --bronze-a4: color(display-p3 0.424 0.133 0.004 / 0.122);
+      --bronze-a5: color(display-p3 0.4 0.145 0.004 / 0.169);
+      --bronze-a6: color(display-p3 0.388 0.125 0.004 / 0.224);
+      --bronze-a7: color(display-p3 0.365 0.11 0.004 / 0.295);
+      --bronze-a8: color(display-p3 0.341 0.102 0.004 / 0.393);
+      --bronze-a9: color(display-p3 0.29 0.094 0 / 0.546);
+      --bronze-a10: color(display-p3 0.255 0.082 0 / 0.585);
+      --bronze-a11: color(display-p3 0.471 0.373 0.336);
+      --bronze-a12: color(display-p3 0.251 0.191 0.172);
+    }
+  }
+}

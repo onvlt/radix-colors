@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --grass-a1: oklch(70% 0.238 142.5 / 0.0157);
+  --grass-a2: oklch(59.2% 0.201 142.5 / 0.0392);
+  --grass-a3: oklch(58.6% 0.199 142.5 / 0.0863);
+  --grass-a4: oklch(60.9% 0.206 142.7 / 0.1451);
+  --grass-a5: oklch(57.5% 0.194 142.7 / 0.2118);
+  --grass-a6: oklch(56.4% 0.189 142.9 / 0.302);
+  --grass-a7: oklch(55.2% 0.184 143.1 / 0.4196);
+  --grass-a8: oklch(55.8% 0.182 143.8 / 0.6039);
+  --grass-a9: oklch(53.8% 0.174 144 / 0.7255);
+  --grass-a10: oklch(50.6% 0.164 144.1 / 0.7569);
+  --grass-a11: oklch(44% 0.141 144.5 / 0.8353);
+  --grass-a12: oklch(21.2% 0.062 147.4 / 0.8745);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --grass-a1: color(display-p3 0.024 0.757 0.024 / 0.016);
+      --grass-a2: color(display-p3 0.024 0.565 0.024 / 0.036);
+      --grass-a3: color(display-p3 0.059 0.576 0.008 / 0.083);
+      --grass-a4: color(display-p3 0.035 0.565 0.008 / 0.134);
+      --grass-a5: color(display-p3 0.047 0.545 0.008 / 0.197);
+      --grass-a6: color(display-p3 0.031 0.502 0.004 / 0.275);
+      --grass-a7: color(display-p3 0.012 0.482 0.004 / 0.377);
+      --grass-a8: color(display-p3 0 0.467 0.008 / 0.522);
+      --grass-a9: color(display-p3 0.008 0.435 0 / 0.624);
+      --grass-a10: color(display-p3 0.008 0.388 0 / 0.659);
+      --grass-a11: color(display-p3 0.263 0.488 0.261);
+      --grass-a12: color(display-p3 0.151 0.233 0.153);
+    }
+  }
+}

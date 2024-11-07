@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --mint-1: oklch(18.9% 0.011 196.3);
+  --mint-2: oklch(21.1% 0.017 195.9);
+  --mint-3: oklch(26.8% 0.039 192.4);
+  --mint-4: oklch(31.5% 0.054 191);
+  --mint-5: oklch(35.9% 0.062 190);
+  --mint-6: oklch(41.1% 0.066 186.2);
+  --mint-7: oklch(47% 0.073 183.5);
+  --mint-8: oklch(54.1% 0.085 179.2);
+  --mint-9: oklch(87% 0.1 178);
+  --mint-10: oklch(91.6% 0.079 180);
+  --mint-11: oklch(79.5% 0.118 176.5);
+  --mint-12: oklch(93.1% 0.057 168.3);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --mint-1: color(display-p3 0.059 0.082 0.081);
+      --mint-2: color(display-p3 0.068 0.104 0.105);
+      --mint-3: color(display-p3 0.077 0.17 0.168);
+      --mint-4: color(display-p3 0.068 0.224 0.22);
+      --mint-5: color(display-p3 0.104 0.275 0.264);
+      --mint-6: color(display-p3 0.154 0.332 0.313);
+      --mint-7: color(display-p3 0.207 0.403 0.373);
+      --mint-8: color(display-p3 0.258 0.49 0.441);
+      --mint-9: color(display-p3 0.62 0.908 0.834);
+      --mint-10: color(display-p3 0.725 0.954 0.898);
+      --mint-11: color(display-p3 0.482 0.825 0.733);
+      --mint-12: color(display-p3 0.807 0.955 0.887);
+    }
+  }
+}

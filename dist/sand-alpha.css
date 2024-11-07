@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --sand-a1: oklch(43.5% 0.095 109.8 / 0.0118);
+  --sand-a2: oklch(25.6% 0.056 109.8 / 0.0275);
+  --sand-a3: oklch(19.2% 0.042 68.9 / 0.0627);
+  --sand-a4: oklch(20.3% 0.042 86.2 / 0.098);
+  --sand-a5: oklch(21.1% 0.043 94.5 / 0.1294);
+  --sand-a6: oklch(18.9% 0.039 94.7 / 0.1608);
+  --sand-a7: oklch(19.2% 0.04 97.7 / 0.2078);
+  --sand-a8: oklch(19.5% 0.038 99.7 / 0.2902);
+  --sand-a9: oklch(16.3% 0.036 109.8 / 0.4745);
+  --sand-a10: oklch(14.9% 0.033 109.8 / 0.5137);
+  --sand-a11: oklch(13% 0.028 109.8 / 0.6314);
+  --sand-a12: oklch(11.3% 0.024 103.4 / 0.8902);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --sand-a1: color(display-p3 0.349 0.349 0.024 / 0.012);
+      --sand-a2: color(display-p3 0.161 0.161 0.024 / 0.028);
+      --sand-a3: color(display-p3 0.067 0.067 0.008 / 0.063);
+      --sand-a4: color(display-p3 0.129 0.129 0.012 / 0.099);
+      --sand-a5: color(display-p3 0.098 0.067 0.008 / 0.126);
+      --sand-a6: color(display-p3 0.102 0.075 0.004 / 0.161);
+      --sand-a7: color(display-p3 0.098 0.098 0.004 / 0.208);
+      --sand-a8: color(display-p3 0.086 0.075 0.004 / 0.287);
+      --sand-a9: color(display-p3 0.051 0.051 0.004 / 0.471);
+      --sand-a10: color(display-p3 0.047 0.047 0 / 0.514);
+      --sand-a11: color(display-p3 0.031 0.031 0 / 0.632);
+      --sand-a12: color(display-p3 0.024 0.02 0 / 0.891);
+    }
+  }
+}

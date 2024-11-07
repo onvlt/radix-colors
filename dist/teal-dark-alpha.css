@@ -1,0 +1,33 @@
+.dark, .dark-theme {
+  --teal-a1: oklch(80% 0.161 168.6 / 0.0196);
+  --teal-a2: oklch(88.9% 0.156 184.1 / 0.0471);
+  --teal-a3: oklch(89.8% 0.16 182.4 / 0.1176);
+  --teal-a4: oklch(89.8% 0.159 183.8 / 0.1765);
+  --teal-a5: oklch(89.9% 0.159 184.3 / 0.2314);
+  --teal-a6: oklch(89.9% 0.157 183.2 / 0.2941);
+  --teal-a7: oklch(89.6% 0.152 184 / 0.3725);
+  --teal-a8: oklch(90.1% 0.154 182.5 / 0.4588);
+  --teal-a9: oklch(89.8% 0.16 181.4 / 0.6235);
+  --teal-a10: oklch(89.6% 0.162 179.6 / 0.6824);
+  --teal-a11: oklch(89.1% 0.167 175.2 / 0.8392);
+  --teal-a12: oklch(94.8% 0.075 175.2 / 0.9373);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark, .dark-theme {
+      --teal-a1: color(display-p3 0 0.992 0.761 / 0.017);
+      --teal-a2: color(display-p3 0.235 0.988 0.902 / 0.047);
+      --teal-a3: color(display-p3 0.235 1 0.898 / 0.118);
+      --teal-a4: color(display-p3 0.18 0.996 0.929 / 0.173);
+      --teal-a5: color(display-p3 0.31 1 0.933 / 0.227);
+      --teal-a6: color(display-p3 0.396 1 0.933 / 0.286);
+      --teal-a7: color(display-p3 0.443 1 0.925 / 0.366);
+      --teal-a8: color(display-p3 0.459 1 0.925 / 0.454);
+      --teal-a9: color(display-p3 0.443 0.996 0.906 / 0.61);
+      --teal-a10: color(display-p3 0.439 0.996 0.89 / 0.669);
+      --teal-a11: color(display-p3 0.388 0.835 0.719);
+      --teal-a12: color(display-p3 0.734 0.934 0.87);
+    }
+  }
+}

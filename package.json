@@ -9,11 +9,11 @@
   "module": "index.mjs",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "yarn clean && yarn && rollup -c && yarn build-css-modules",
+    "build": "yarn clean && mkdir dist && yarn && rollup -c && yarn build-css-modules && convert-to-oklch dist/*.css",
     "build-css-modules": "node ./scripts/build-css-modules.js",
     "prepublishOnly": "yarn build",
     "postpublish": "yarn clean",
-    "clean": "git clean -fdX"
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "radix",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "@types/node": "^15.0.3",
+    "convert-to-oklch": "^1.2.8",
     "rollup": "^2.48.0",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"

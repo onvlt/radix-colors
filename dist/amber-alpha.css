@@ -1,0 +1,33 @@
+:root, .light, .light-theme {
+  --amber-a1: oklch(65% 0.138 74 / 0.0157);
+  --amber-a2: oklch(86.4% 0.178 96.8 / 0.0863);
+  --amber-a3: oklch(90.1% 0.186 98.3 / 0.2392);
+  --amber-a4: oklch(88.1% 0.181 94 / 0.3882);
+  --amber-a5: oklch(86.4% 0.177 94.4 / 0.5333);
+  --amber-a6: oklch(79.9% 0.163 87.3 / 0.549);
+  --amber-a7: oklch(73.4% 0.153 78.6 / 0.6157);
+  --amber-a8: oklch(70% 0.152 69.2 / 0.7882);
+  --amber-a9: oklch(81.8% 0.171 77.9 / 0.7608);
+  --amber-a10: oklch(81.8% 0.171 77.9 / 0.9059);
+  --amber-a11: oklch(57.1% 0.129 63.9);
+  --amber-a12: oklch(23.8% 0.06 53.3 / 0.8667);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --amber-a1: color(display-p3 0.757 0.514 0.024 / 0.016);
+      --amber-a2: color(display-p3 0.902 0.804 0.008 / 0.079);
+      --amber-a3: color(display-p3 0.965 0.859 0.004 / 0.22);
+      --amber-a4: color(display-p3 0.969 0.82 0.004 / 0.35);
+      --amber-a5: color(display-p3 0.933 0.796 0.004 / 0.475);
+      --amber-a6: color(display-p3 0.875 0.682 0.004 / 0.495);
+      --amber-a7: color(display-p3 0.804 0.573 0 / 0.557);
+      --amber-a8: color(display-p3 0.788 0.502 0 / 0.699);
+      --amber-a9: color(display-p3 1 0.686 0 / 0.742);
+      --amber-a10: color(display-p3 0.945 0.643 0 / 0.726);
+      --amber-a11: color(display-p3 0.64 0.4 0);
+      --amber-a12: color(display-p3 0.294 0.208 0.145);
+    }
+  }
+}
